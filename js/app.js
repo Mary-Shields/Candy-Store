@@ -400,5 +400,103 @@ const candy = [
         seasonSold: '6'
     },
     {
-        candyId
+        candyId: '9',
+        candyName: "Candy Corn",
+        company: "The Ferrara Candy Company",
+        firstApp: new Date('1880'),
+        weight: '4.2 oz',
+        storePrice: '$3.99',
+        customerReview: '1.0',
+        seasonSold: '2'
+    },
+    {
+        candyId: '9',
+        candyName: "Candy Canes",
+        company: "Spangler Candy Company",
+        firstApp: new Date('1847'),
+        weight: '8.8 oz',
+        storePrice: '$8.99',
+        customerReview: '5.0',
+        seasonSold: '3'
+    },
+    {
+        candyId: '9',
+        candyName: "Peppermint Bark",
+        company: "Williams Sonoma",
+        firstApp: new Date('1998'),
+        weight: '3.5 oz',
+        storePrice: '$5.90',
+        customerReview: '5.0',
+        seasonSold: '3'
+    },
+    {
+        candyId: '9',
+        candyName: "Brach's Tiny Conversation Hearts",
+        company: "The Ferrara Candy Company",
+        firstApp: new Date('1960'),
+        weight: '1 oz',
+        storePrice: '$0.95',
+        customerReview: '3.0',
+        seasonSold: '4'
+    },
+    {
+        candyId: '9',
+        candyName: "Chocolate Roses",
+        company: "Cadbury Roses",
+        firstApp: new Date('1938'),
+        weight: '3.0 lb',
+        storePrice: '$38.50',
+        customerReview: '3.0',
+        seasonSold: '4'
+    },
+    {
+        candyId: '10',
+        candyName: "Jelly Belly",
+        company: "The Jelly Belly Candy Company",
+        firstApp: new Date('1976'),
+        weight: '7 oz',
+        storePrice: '$4.18',
+        customerReview: '4.0',
+        seasonSold: '4'
+    },
+    {
+        candyId: '10',
+        candyName: "Bean Boozled",
+        company: "The Jelly Belly Candy Company",
+        firstApp: new Date('2007'),
+        weight: '3.5 oz',
+        storePrice: '$8.90',
+        customerReview: '5.0',
+        seasonSold: '4'
+    },
+    {
+        candyId: '10',
+        candyName: "Candy Pebbles",
+        company: "Sweet's Candy Company",
+        firstApp: new Date('1937'),
+        weight: '1 lb',
+        storePrice: '$16.99',
+        customerReview: '5.0',
+        seasonSold: '6'
+    },
+    {
+        candyId: '10',
+        candyName: "Fruity Pebbles Jelly Beans",
+        company: "Flix Candy",
+        firstApp: new Date('2016'),
+        weight: '3.75 oz',
+        storePrice: '$6.99',
+        customerReview: '5.0',
+        seasonSold: '4'
+    },
+    {
+        candyId: '10',
+        candyName: "Speckled Bird Egg Jelly Beans",
+        company: "Brach's",
+        firstApp: new Date('1910'),
+        weight: '9 oz',
+        storePrice: '$12.00',
+        customerReview: '3.0',
+        seasonSold: '4'
     }
+]
