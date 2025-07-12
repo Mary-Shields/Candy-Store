@@ -351,51 +351,54 @@ const candy = [
     },
     {
         candyId: '8',
-        candyName: "",
-        company: "",
-        firstApp: new Date(''),
-        weight: '',
-        storePrice: '$',
-        customerReview: '',
-        seasonSold: ''
+        candyName: "Sour Patch Kids",
+        company: "Mondelez International",
+        firstApp: new Date('1970'),
+        weight: '3.5 oz',
+        storePrice: '$1.24',
+        customerReview: '5.0',
+        seasonSold: '6'
     },
     {
         candyId: '8',
-        candyName: "",
-        company: "",
-        firstApp: new Date(''),
-        weight: '',
-        storePrice: '$',
-        customerReview: '',
-        seasonSold: ''
+        candyName: "Warheads",
+        company: "Impact Confections",
+        firstApp: new Date('1945'),
+        weight: '1 lb',
+        storePrice: '$9.80',
+        customerReview: '3.0',
+        seasonSold: '1'
     },
     {
         candyId: '8',
-        candyName: "",
-        company: "",
-        firstApp: new Date(''),
-        weight: '',
-        storePrice: '$',
-        customerReview: '',
-        seasonSold: ''
+        candyName: "Trolli",
+        company: "The Ferrara Candy Company",
+        firstApp: new Date('1075'),
+        weight: '14 oz',
+        storePrice: '$3.47',
+        customerReview: '5.0',
+        seasonSold: '6'
     },
     {
         candyId: '8',
-        candyName: "",
-        company: "",
-        firstApp: new Date(''),
-        weight: '',
-        storePrice: '$',
-        customerReview: '',
-        seasonSold: ''
+        candyName: "Fun Dip",
+        company: "The Ferrara Candy Company",
+        firstApp: new Date('1940'),
+        weight: '0.43 oz',
+        storePrice: '$6.99',
+        customerReview: '5.0',
+        seasonSold: '6'
     },
     {
         candyId: '8',
-        candyName: "",
-        company: "",
-        firstApp: new Date(''),
-        weight: '',
-        storePrice: '$',
-        customerReview: '',
-        seasonSold: ''
+        candyName: "Sour Punch",
+        company: "American Licorice Company",
+        firstApp: new Date('1990'),
+        weight: '9 oz',
+        storePrice: '$4.50',
+        customerReview: '5.0',
+        seasonSold: '6'
     },
+    {
+        candyId
+    }
