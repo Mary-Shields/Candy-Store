@@ -500,3 +500,128 @@ const candy = [
         seasonSold: '4'
     }
 ]
+
+const buildCards =(obj)=> {
+
+    const makeList =(el, arr)=> {
+
+        if(arr.length == 0) {
+            const li = document.createElement ('li')
+
+            li.classList.add('list-group-item')
+            li.innerText = 'none'
+
+            el.appendChild(li)
+
+        }
+
+        arr.forEach(item => {
+            const li = document.createElement('li')
+            li.classList
+        })
+    }
+    const column = document.createElement('div')
+    column.classList.add('col')
+
+    const card = document.createElement('div')
+    card.classList.add('card', 'h-100')
+    card.setAttribute('id', `card-${obj.id}`)
+
+    const cardBody = document.createElement('div')
+    cardBody.classList.add('card-body')
+
+    const cardHeader = document.createElement('div')
+    cardHeader.classList.add('card-header')
+
+    const company = document.createElement('h4')
+    company.classList.add('text-capitalize')
+    company.innerText = obj.company
+
+    const candyName = document.createElement('p')
+    candyName.classList.add('text-capitalize', 'fst-italic')
+    candyName.innerText = obj.name
+
+    const weightLabel = document.createElement('h3')
+    weightLabel.classList.add('text-capitalize', 'text-danger')
+    weightLabel.innerText = 'weight'
+
+    const weightList = document.createElement('ul')
+    weightList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.weight) === 'object') {
+        makeList(weightList, obj.weight)
+    }
+
+    const storePriceLabel = document.createElement('h3')
+    storePriceLabel.classList.add('text-capitalize', 'text-primary')
+    storePriceLabel.innerText = 'storePrice'
+
+    const storePriceList = document.createElement('ul')
+    storePriceList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.storePrice) === 'object') {
+        makeList(storePriceList, obj.storePrice)
+    }
+
+    const customerReviewLabel = document.createElement('h3')
+    customerReviewLabel.classList.add('text-capitalize', 'text-primary')
+    customerReviewLabel.innerText = 'customerReview'
+
+    const customerReviewList = document.createElement('ul')
+    customerReviewList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.customerReview) === 'object') {
+        makeList(customerReviewList, obj.customerReview)
+    }
+    const cardFooter = document.createElement('div')
+    cardFooter.classList.add('card-footer')
+
+    cardFooter.innerHTML = `
+        <p class="card-text">SeasonSold: ${obj.seasonSold}</p>
+        <p class="card-text">Company: ${obj.company}</p>
+        <p class="card-text">First App: ${obj.firstApp.getMonth() +1 }/${obj.firstApp.getFullYear()}</p`
+
+    cardHeader.appendChild(company)
+    cardHeader.appendChild(candyName)
+
+    card.appendChild(cardHeader)
+
+    cardBody.appendChild(weightLabel)
+    cardBody.appendChild(weightList)
+
+    cardBody.appendChild(storePriceLabel)
+    cardBody.appendChild(storePriceList)
+
+    cardBody.appendChild(customerReviewLabel)
+    cardBody.appendChild(customerReviewList)
+
+    card.appendChild(cardBody)
+    card.appendChild(cardFooter)
+    column.appendChild(card)
+
+    row.appendChild(column)
+
+}
+const loadCards =(arr)=> {
+    arr.forEach(item => buildCards(item))
+}
+
+const loadBtn = document.getElementById('loadBtn')
+
+/**
+ * document.addEventListener(event, callBack function)
+ */
+loadBtn.addEventListener('click', (e)=> {
+    e.preventDefault()
+    row.innerHTML = ''
+
+    const filter = document.getElementById('filter').value 
+
+let cards = candies.filter(candy => Object.values(candy).includes(filter))
+
+
+    console.log(cards);
+    
+
+    loadCards(cards)
+})
