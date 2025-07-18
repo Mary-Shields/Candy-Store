@@ -22,7 +22,7 @@ server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-server.get('/api', (requestAnimationFrame, res)=> {
+server.get('/api', (req, res)=> {
     res.json({
         'All Candy': `http://localhost:${PORT}/api/candy`,
         'All Company': `http://localhost:${PORT}/api/company`,
