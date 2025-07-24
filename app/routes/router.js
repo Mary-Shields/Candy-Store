@@ -5,24 +5,22 @@ const axios = require('axios')
 
 const PORT = process.env.PORT || 3000
 
-router.use(express.static('public'))
-
 router.get('/api', (req, res)=> {
     res.json({
         'All Candy': `http://localhost:${PORT}/api/candy`,
-        'All Company': `http://localhost:${PORT}/api/company`,
-        'All Weight': `http://localhost:${PORT}/api/weight`,
-        'All StorePrice': `http://localhost:${PORT}/api/storeprice`,
-        'All CustomerReview': `http://localhost:${PORT}/api/customerreview`,
+        // 'All Company': `http://localhost:${PORT}/api/company`,
+        // 'All Weight': `http://localhost:${PORT}/api/weight`,
+        // 'All StorePrice': `http://localhost:${PORT}/api/storeprice`,
+        // 'All CustomerReview': `http://localhost:${PORT}/api/customerreview`,
     })
 })
 
 const endpoints = [
     'candy',
-    'company',
-    'weight',
-    'storePrice',
-    'customerReview'
+    // 'company',
+    // 'weight',
+    // 'storePrice',
+    // 'customerReview'
 ]
 
 let candyCount = 0

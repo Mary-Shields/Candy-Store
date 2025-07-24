@@ -1,6 +1,6 @@
 
 
-const con = require('../config/dbconfig')
+const con = require('../../config/dbconfig')
 
 const dao = {
 findAll: (res, table)=> {

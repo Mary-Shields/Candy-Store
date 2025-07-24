@@ -22,15 +22,5 @@ server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-server.get('/api', (req, res)=> {
-    res.json({
-        'All Candy': `http://localhost:${PORT}/api/candy`,
-        'All Company': `http://localhost:${PORT}/api/company`,
-        'All Weight': `http://localhost:${PORT}/api/weight`,
-        'All StorePrice': `http://localhost:${PORT}/api/storeprice`,
-        'All CustomerReview': `http://localhost:${PORT}/api/customerreview`,
-    })
-})
-
 server.use('/', router)
 server.set('view engine', 'ejs')
